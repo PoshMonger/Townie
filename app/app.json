@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Black Out Deals",
+    "slug": "black-out-deals",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.blackoutdeals.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Black Out Deals uses your location to find nearby deals and hidden spots.",
+        "NSPhotoLibraryUsageDescription": "Black Out Deals needs access to your photos to upload images."
+      }
+    },
+    "android": {
+      "package": "com.blackoutdeals.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Black Out Deals uses your location to find nearby deals and hidden spots."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
